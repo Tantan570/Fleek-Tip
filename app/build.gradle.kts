@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.fleektip"
-        minSdk = 21
+        minSdk = 24
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -41,16 +41,17 @@ android {
 
 dependencies {
 
-    //CameraX
+    // ARCore
+    implementation("com.google.ar:core:1.44.0")
+
+    // CameraX
     implementation(libs.androidx.camera.core)
     implementation(libs.androidx.camera.camera2)
     implementation(libs.androidx.camera.lifecycle)
     implementation(libs.androidx.camera.view)
 
-    //ARCore
-    implementation("com.google.ar:core:1.44.0")
-    implementation("androidx.compose.ui:ui:1.5.4")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    // Sceneform (for AR rendering)
+    implementation("com.gorisse.thomas.sceneform:sceneform:1.23.0")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -67,4 +68,5 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation("androidx.appcompat:appcompat:1.7.0")
 }
