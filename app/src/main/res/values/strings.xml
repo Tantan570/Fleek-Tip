@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fleek &amp; Tip</string>
+    <string name="title_activity_arscreen">ARScreenActivity</string>
+    <string name="title_activity_reservation">ReservationActivity</string>
+</resources>
