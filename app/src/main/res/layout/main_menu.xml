@@ -70,5 +70,38 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="4dp"/>
 
+    <View
+        android:id="@+id/divider"
+        android:layout_width="200dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/magenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReservation" />
+
+    <ImageButton
+        android:id="@+id/btn_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        android:contentDescription="Open Facebook page"
+        app:srcCompat="@drawable/facebook_icon" />
+
+    <ImageButton
+        android:id="@+id/btn_tiktok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/btn_facebook"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        android:contentDescription="Open TikTok page"
+        app:srcCompat="@drawable/tiktok_icon" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

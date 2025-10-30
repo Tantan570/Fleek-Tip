@@ -11,6 +11,9 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.FleekTip">
+
+        <activity android:name=".SocialRedirectActivity" />
+
         <activity
             android:name=".ReservationActivity"
             android:exported="false"

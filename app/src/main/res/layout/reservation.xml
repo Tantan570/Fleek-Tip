@@ -63,14 +63,19 @@
             android:id="@+id/spnService"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/etPhone"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="12dp"
+            android:hint="Select Service"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="12dp"/>
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etPhone" />
 
         <Button
             android:id="@+id/btnDate"
             android:layout_width="250dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Select Date"
@@ -82,6 +87,9 @@
         <Button
             android:id="@+id/btnTime"
             android:layout_width="250dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Select Time"
@@ -93,6 +101,9 @@
         <Button
             android:id="@+id/btnConfirm"
             android:layout_width="250dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Confirm Reservation"
